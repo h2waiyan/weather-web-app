@@ -1,0 +1,16 @@
+<h1>Awesome Weather App</h1>
+<form (ngSubmit)="getWeather()">
+  <label for="city" class="form-label">City : </label>
+  <input
+    type="text"
+    class="form-control"
+    id="city"
+    name="city"
+    [(ngModel)]="city"
+  />
+
+  <button class="btn btn-success" type="submit">Search</button>
+</form>
+
+<h1>Current temperature is : {{ temp }}</h1>
+<h2>Weather condition is : {{ desc }}</h2>
